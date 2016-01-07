@@ -1,0 +1,52 @@
+\documentclass[a4paper,fontsize=12,parskip=half,toc=bibliography, headsepline,BCOR=5mm]{scrbook}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage[variant=usmax]{english}
+\setotherlanguage[latesthyphen=true,babelshorthands=true]{german}
+%Insert clickable links to Table of Contents, Figures and References.
+\usepackage[hidelinks]{hyperref}
+%linespread{1.3}
+\usepackage[outputdir=.texpadtmp]{minted}
+\usepackage{todonotes}
+\usepackage[natbibapa]{apacite}
+
+\usepackage[headsepline,plainheadsepline,footsepline,plainfootsepline,automark,standardstyle]{scrpage2}
+\clearscrheadfoot
+\pagestyle{scrheadings}
+\ohead{\headmark}
+\ofoot[\pagemark]{\pagemark}
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
+\setheadsepline[text]{.3pt}
+\setfootsepline[text]{.3pt}
+\usepackage[showboxes]{textpos}
+\usepackage{graphicx} 
+%=================================================================
+%Style options
+%=================================================================
+%Change paragraph style by uncommenting the 2 lines that follow
+%\parindent 0mm
+%\parskip=\baselineskip
+
+%Uncomment to remove page numbers
+%\pagenumbering{gobble}
+%=================================================================
+\usepackage{scrhack}
+\usepackage{setspace}
+\usepackage{pdfpages}
+
+\title{Cognitive Enhancement}
+\subtitle{A Redefinition}
+
+%Author
+\author{Titus v. Köller}
+%Date
+\date{September 15, 2014}
+\subject{Bachelor's Thesis}
+
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
